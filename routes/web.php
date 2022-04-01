@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/ola', function () {
+    return "ola bom dia";
+});
+
+Route::get('/urlTest', function () {
+    return "This is a URL successful TEST";
+});
