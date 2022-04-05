@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +25,5 @@ Route::get('/ola', function () {
 Route::get('/urlTest', function () {
     return "This is a URL successful TEST";
 });
+Route::view('profile', 'profile');
+Route::Post('/profile', [ProfileController::class, 'upload']);
