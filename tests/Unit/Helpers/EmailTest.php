@@ -18,11 +18,6 @@ class EmailTest extends TestCase
         $email = "correotest@gmail.com";
         // $result = (bool) filter_var($email, FILTER_VALIDATE_EMAIL);
         $result = Email::validate($email);
-
-        
-
         $this->assertTrue($result);
-
-
     }
 }

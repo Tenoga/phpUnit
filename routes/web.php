@@ -18,12 +18,11 @@ use App\Http\Controllers\ProfileController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/ola', function () {
-    return "ola bom dia";
-});
-
 Route::get('/urlTest', function () {
     return "This is a URL successful TEST";
+});
+Route::get('/ola', function () {
+    return "ola bom dia";
 });
 Route::view('profile', 'profile');
 Route::Post('/profile', [ProfileController::class, 'upload']);
